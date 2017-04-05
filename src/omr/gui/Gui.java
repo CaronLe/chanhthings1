@@ -44,15 +44,14 @@ public class Gui extends JFrame {
      * Initializes the GUI and shows the main window.
      */
     public Gui() {
-        super("Optical Mark Recognition");
+        super("Auto-Grading Test Application");
 
         // Background tasks executor
         this.executor = Executors.newSingleThreadExecutor();
-        
         this.reset();
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(new Dimension(800, 600));
+        this.setSize(new Dimension(1500, 1200));
 
         //Add widgets
         addWidgets();
